@@ -118,12 +118,26 @@ main h1 {
     transform: scale(1.1);
 }
 
-.gallery-container p {
+.gallery-container .textwhite {
     font-size: 15px;
+    text-align: justify;
+    background-color: #fff;
+}
+
+.gallery-container p {
+    margin: 20px 20px 20px 20px;
+    padding: 0;
+}
+
+
+cite {
+    justify-content: right;
+    margin-left: 1269px;
+    padding: 10px;
 }
 
 .gallery-container cite {
-    font-size: 11px;
+    font-size: 15px;
 }
 
 .gallery-container q {
@@ -133,6 +147,71 @@ main h1 {
 .gallery-container h2 {
     font-size: 20px;
     padding-top: 15px;
+}
+
+.calibre {
+    margin: 0px 160px 0px 160px;
+    background-color: #fff;
+}
+
+.calibre .block_ {
+    margin: 10px 53px -3px 50px;
+    text-align: justify;
+}
+
+.textwhite .block_9 {
+    text-align: center;
+    padding: 10px;
+    margin: 20px 350px 20px 351px;;
+}
+
+.textwhite .block_12 {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.textwhite .text_2 {
+   margin-left: o auto;
+}
+
+/*autores*/
+.autor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 2vw;
+}
+
+.autorimg {
+    width: 340px;
+    border: 10px solid #fff;
+    box-shadow: 5px 5px 5px #006;
+    transition: transform .5s linear;
+    
+}
+
+.autor img {
+    width: 495px;
+    margin-left: 1241px;
+}
+
+.nome_autor {
+    padding: 0;
+    margin-right: 374px;
+    
+}
+
+.autor_sobre {
+    font-size: 16px;
+    text-align: left;
+    padding: 10px 50px 10px 50px;
+    margin: -702px 951px 408px 115px;
+    background-color: #fff;
+}
+
+.autor_sobre a{
+    color: #006;
 }
 /*Rodapé*/
 footer {
