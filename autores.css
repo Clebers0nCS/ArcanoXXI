@@ -1,0 +1,338 @@
+@charset "utf8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #d49200 url(/imagem/fundo.png) repeat-x;
+    width: 100%;
+    height: 100vh;
+    font-size: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    width: 1080px;
+    margin: 0px auto;
+}
+
+a:link, a:active, a:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    color: rgb(224, 204, 24);
+    transform: scale(1.2);
+}
+
+/*Barra de Navegação*/
+.navigation > .container {
+    max-width: 90%;
+    margin: auto;
+}
+
+.navigation .nav-bar .logo-toggle-container {
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    transform: translateX(-50%);
+}
+
+.navigation .nav-bar .logo-toggle-container a {
+    display: block;
+}
+
+.navigation .nav-bar .logo-toggle-container a img {
+    width: 200px;
+    padding: 14px 27px;
+    
+}
+
+.navigation .menu {
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation .nav-bar .logo-toggle-container {
+        position: static;
+        transform: translateX(0%);
+    }
+    .navigation .nav-bar .logo-toggle-container a {
+        width: 80%;
+    }
+    .navigation .nav-bar .logo-toggle-container .toggle-box {
+        position: absolute;
+        right: 10px;
+        top: 30px;
+        display: block;
+        width: 30px;
+        background: #000;
+        padding: 15px 9px;
+        border-radius: 5px;
+    }
+    .navigation .nav-bar .logo-toggle-container .toggle-box span {
+       display: block;
+       max-width: 90%;
+       margin: auto;
+       height: 2px;
+       background-color: #fff;
+       margin-bottom: 4px; 
+    }
+    .navigation .nav-bar .logo-toggle-container .toggle-box span:last-child {
+        margin-bottom: 0;
+    }
+    .navigation .menu {
+        text-align: center;
+        display: none;
+    }
+    .navigation .menu li {
+        display: block;
+        float: none !important;
+        padding: 0 10px;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+@media screen and (min-width: 1440px)
+{
+    .navegation .menu {
+        display: block !important;
+        height: auto !important;
+    }
+}
+.navigation .menu li {
+    display: inline-block;
+    padding: 45px 47px;
+}
+
+.navigation .menu li a {
+    display: block;
+    padding: 45px 51px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.navigation .menu li:nth-child(1),
+.navigation .menu li:nth-child(2),
+.navigation .menu li:nth-child(3) {
+    float: left;
+}
+
+@media screen and (min-width: 1024px)
+{
+    .navegation .menu {
+        display: block !important;
+        height: auto !important;
+    }
+}
+.navigation .menu li {
+    display: inline-block;
+    padding: 45px 47px;
+}
+
+.navigation .menu li a {
+    display: block;
+    padding: 45px 7px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.navigation .menu li:nth-child(1),
+.navigation .menu li:nth-child(2),
+.navigation .menu li:nth-child(3) {
+    float: left;
+}
+
+@media screen and (min-width: 780px)
+{
+    .navegation .menu {
+        display: block !important;
+        height: auto !important;
+    }
+}
+.navigation .menu li {
+    display: inline-block;
+    padding: 45px 47px;
+}
+
+.navigation .menu li a {
+    display: block;
+    padding: 45px 7px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.navigation .menu li:nth-child(1),
+.navigation .menu li:nth-child(2),
+.navigation .menu li:nth-child(3) {
+    float: left;
+}
+
+@media screen and (min-width: 1080px)
+{
+    .navegation .menu {
+        display: block !important;
+        height: auto !important;
+    }
+}
+.navigation .menu li {
+    display: inline-block;
+    padding: 45px 47px;
+}
+
+.navigation .menu li a {
+    display: block;
+    padding: 45px 25px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.navigation .menu li:nth-child(1),
+.navigation .menu li:nth-child(2),
+.navigation .menu li:nth-child(3) {
+    float: left;
+}
+
+/*autores*/
+.container-autores {
+    width: 100%;
+    height: 10vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre {
+    width: 960px;
+    margin-top: 507px;
+}
+
+.sobre-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 3rem;
+}
+
+.sobre-title:after {
+    content: "";
+    padding: 2px;
+    background-color: #fff;
+    display: flex;
+    margin: 0 auto;
+    width: 20%;
+    margin-top: 1rem;
+}
+
+.sobre-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem 0;
+}
+
+.sobre-list li {
+    list-style-type: none;
+}
+
+.sobre-figure {
+    width: 160px;
+    height: 160px;
+
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.sobre-figure img {
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+.sobre-link:hover .sobre-figure img {
+    filter: none;
+}
+
+.sobre-descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.sobre-descricao:target {
+    display: flex;
+}
+
+.sobre-nomes {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.sobre-nomes:after {
+    content: "";
+    padding: 2px;
+    background-color: #fff;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 1rem;  
+}
+
+.sobre-descricao-user {
+    margin-top: 3rem;
+    font-size: 18px;
+}
+
+main h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+main p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: justify; 
+}
+
+.descricao-user {
+    background-color: #1b1b3d;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+/*Rodapé*/
+footer {
+    clear: both;
+    padding: 20px 0 30px 0;
+    text-align: center;
+    background: url(/imagem/fundo-rodape.png) no-repeat center top;
+    margin-top: 535px;
+}
+
+footer>p a {
+    padding: 2px 10px;
+}
+
+footer> a {
+    color: #fff;
+}

@@ -1,0 +1,250 @@
+@charset "utf8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #d49200 url(/imagem/fundo.png) repeat-x;
+    width: 100%;
+    height: 100vh;
+    font-size: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    width: 1080px;
+    margin: 0px auto;
+}
+
+a:link, a:active, a:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    color: rgb(224, 204, 24);
+    transform: scale(1.2);
+}
+
+/*Barra de Navegação*/
+.navigation > .container {
+    max-width: 90%;
+    margin: auto;
+}
+
+.navigation .nav-bar .logo-toggle-container {
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    transform: translateX(-50%);
+}
+
+.navigation .nav-bar .logo-toggle-container a {
+    display: block;
+}
+
+.navigation .nav-bar .logo-toggle-container a img {
+    width: 155px;
+    margin-left: -40px;
+    
+}
+
+.navigation .menu {
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation .nav-bar .logo-toggle-container {
+        position: static;
+        transform: translateX(0%);
+    }
+    .navigation .nav-bar .logo-toggle-container a {
+        width: 80%;
+    }
+    .navigation .nav-bar .logo-toggle-container .toggle-box {
+        position: absolute;
+        right: 10px;
+        top: 30px;
+        display: block;
+        width: 30px;
+        background: #000;
+        padding: 15px 9px;
+        border-radius: 5px;
+    }
+    .navigation .nav-bar .logo-toggle-container .toggle-box span {
+       display: block;
+       max-width: 90%;
+       margin: auto;
+       height: 2px;
+       background-color: #fff;
+       margin-bottom: 4px; 
+    }
+    .navigation .nav-bar .logo-toggle-container .toggle-box span:last-child {
+        margin-bottom: 0;
+    }
+    .navigation .menu {
+        text-align: center;
+        display: none;
+    }
+    .navigation .menu li {
+        display: block;
+        float: none !important;
+        padding: 0 10px;
+        border-bottom: 1px solid #ccc;
+    }
+    .main h1 {
+       margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 1440px)
+{
+    .navigation .menu li a {
+        display: block;
+        padding: 45px 23px;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #fff;
+        font-size: 30px;
+    } 
+}
+.navigation .menu li {
+    display: inline-block;
+    padding: 45px 47px;
+}
+
+@media screen and (max-width: 1024px)
+{
+    .navigation .menu li a {
+        display: block;
+        padding: 45px 3px;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #fff;
+        font-size: 30px;
+    } 
+}
+.navigation .menu li {
+    display: inline-block;
+    padding: 45px 47px;
+}
+
+/*Conteudo*/
+section {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 2vw;
+}
+
+.gallery-items {
+    width: 340px;
+    border: 10px solid #fff;
+    box-shadow: 5px 5px 5px #006;
+    transition: transform .5s linear;
+    
+}
+
+.gallery-items img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+.gallery-items:hover {
+    transform: scale(1.1);
+}
+
+.gallery-container .textwhite {
+    font-size: 15px;
+    text-align: justify;
+    background-color: #fff;
+}
+
+.gallery-container p {
+    margin: 20px 20px 20px 20px;
+    padding: 0;
+}
+
+
+.cite {
+    justify-content: right;
+    margin-left: 1269px;
+    padding: 10px;
+}
+
+.gallery-container cite {
+    font-size: 15px;
+}
+
+.gallery-container q {
+    font-size: 11px "Libre Baskereville";
+}
+
+.gallery-container h2 {
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.calibre {
+    margin: 0px 160px 0px 160px;
+    background-color: #fff;
+}
+
+.calibre .block_ {
+    margin: 10px 53px -3px 50px;
+    text-align: justify;
+}
+
+.textwhite .block_9 {
+    text-align: center;
+    padding: 10px;
+    margin: 20px 350px 20px 351px;;
+}
+
+.textwhite .block_12 {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.textwhite .text_2 {
+   margin-left: o auto;
+}
+
+
+/*Rodapé*/
+footer {
+    clear: both;
+    padding: 20px 0 30px 0;
+    text-align: center;
+    background: url(/imagem/fundo-rodape.png) no-repeat center top;
+    margin-top: 20px;
+}
+
+footer>p a {
+    padding: 2px 10px;
+}
+
+footer> a {
+    color: #fff;
+}
